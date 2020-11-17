@@ -1,0 +1,148 @@
+/* Copyright disclaimer: I do NOT own this video nor the image featured in the video. All rights belong to it's rightful owner/owner's. No copyright infringement intended.  */
+
+@import url("https://fonts.googleapis.com/css?family=Spartan:400,700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(to right, #13d7d5, #08ca88);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Spartan, sans-serif;
+  font-size: 12px;
+  color: #1a1a1a;
+}
+
+.player-container {
+  height: 550px;
+  width: 400px;
+  background: linear-gradient(to bottom,#ffffff,#bdc3c9) ;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+.img-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: -50px;
+  left: 50px;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin: 5px 0 0;
+}
+
+.progress-controls-container {
+  margin-top: 60px;
+}
+
+/* Progress bar*/
+.progress-container {
+  background: #1a1a1a;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 20px;
+  height: 5px;
+  width: 90%;
+}
+
+.progress {
+  background: linear-gradient(to right, #5dfdfb, #08ca88);
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.duration-wrapper {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Controls */
+.player-controls {
+  position: relative;
+  top: -15px;
+  left: 120px;
+  width: 200px;
+}
+
+.fas {
+  font-size: 30px;
+  color: #1a1a1a;
+  margin-right: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fas:hover {
+  transform: scale(1.2);
+  background-image: linear-gradient(#13d7d5, #08ca88);
+  background-image: linear-gradient(to right, #13d7d5, #08ca88);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.fa-pause{
+  background-image: linear-gradient(#13d7d5, #08ca88);
+  background-image: linear-gradient(to right, #13d7d5, #08ca88);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.main-button {
+  font-size: 40px;
+  position: relative;
+  top: 3px;
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  .player-container {
+    width: 95vw;
+  }
+
+  .img-container {
+    left: 29px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .player-controls {
+    top: -10px;
+    left: 100px;
+  }
+}
